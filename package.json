@@ -1,6 +1,6 @@
 {
   "name": "reqexd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "equivalent of require, but in another dir than node_modules to be able to version custom modules",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "url": "https://github.com/idcware"
   },
   "keywords": [
+    "require",
     "include",
     "module"
   ],

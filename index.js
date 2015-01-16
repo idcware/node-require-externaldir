@@ -2,9 +2,9 @@
 
 var fs = require('fs');
 
-function include(mod) {
+function reqexd(mod) {
     /* 
-     * include(module)
+     * reqexd(module)
      *
      * equivalent of require, but get the modules from "includes"
      * instead of node_modules
@@ -12,11 +12,10 @@ function include(mod) {
     var loader = module.parent.filename.split('/');
     var paths = [];
     for(var i = 1; i < loader.length; i++) {
-        paths.unshift([].concat(loader).splice(0, i).join('/')+'/'+include.include_dir);
+        paths.unshift([].concat(loader).splice(0, i).join('/')+'/'+reqexd.include_dir);
     }
 
     for(var i = 0; i < paths.length; i++) {
-        console.log("Testing:", paths[i]+'/'+mod);
         if(fs.existsSync(paths[i]+'/'+mod)) {
             return require(paths[i]+'/'+mod);
         }
@@ -26,8 +25,8 @@ function include(mod) {
 }
 
 
-include.include_dir = "includes";
+reqexd.include_dir = "includes";
 
 
 
-module.exports = include;
+module.exports = reqexd;
