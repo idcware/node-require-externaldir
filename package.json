@@ -1,0 +1,20 @@
+{
+  "name": "node-require-externaldir",
+  "version": "0.0.1",
+  "description": "equivalent of require, but in another dir than node_modules to be able to version custom modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/idcware/node-require-externaldir.git"
+  },
+  "author": {
+    "name": "IDCWARE",
+    "email": "contact@idcware.com",
+    "url": "https://github.com/idcware"
+  },
+  "license": "MIT",
+  "readmeFile": "README.md"
+}
