@@ -1,4 +1,4 @@
-# node-require-externaldir
+# reqexd
 
 Equivalent of require, but in another dir than node_modules to be able to version custom modules.
 
@@ -6,19 +6,19 @@ Equivalent of require, but in another dir than node_modules to be able to versio
 
 Default include dir is "includes":
 ```js
-var include = require('node-require-externaldir');
+var reqexd = require('reqexd');
 
 // foo is located at ../...../includes/foo
-var foo = include('foo');
+var foo = reqexd('foo');
 ```
 
 Change the include dir:
 ```js
-var include = require('node-require-externaldir');
-include.include_dir = "bar";
+var reqexd = require('reqexd');
+reqexd.include_dir = "bar";
 
 // foo is located at ../...../bar/foo
-var foo = include('foo');
+var foo = reqexd('foo');
 ```
 
 # license

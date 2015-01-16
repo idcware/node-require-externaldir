@@ -1,5 +1,5 @@
 {
-  "name": "node-require-externaldir",
+  "name": "reqexd",
   "version": "0.0.1",
   "description": "equivalent of require, but in another dir than node_modules to be able to version custom modules",
   "main": "index.js",
@@ -15,6 +15,10 @@
     "email": "contact@idcware.com",
     "url": "https://github.com/idcware"
   },
+  "keywords": [
+    "include",
+    "module"
+  ],
   "license": "MIT",
   "readmeFile": "README.md"
 }
