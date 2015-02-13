@@ -9,6 +9,9 @@ function reqexd(mod) {
      * equivalent of require, but get the modules from "includes"
      * instead of node_modules
      */
+    if(mod[0] === '.' || mod[0] === '/') {
+        return require(mod);
+    }
     var loader = module.parent.filename.split('/');
     var paths = [];
     for(var i = 1; i < loader.length; i++) {

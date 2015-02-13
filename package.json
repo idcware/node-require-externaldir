@@ -1,6 +1,6 @@
 {
   "name": "reqexd",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "equivalent of require, but in another dir than node_modules to be able to version custom modules",
   "main": "index.js",
   "scripts": {
